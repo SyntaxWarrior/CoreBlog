@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { CacheService } from '../cache.service';
-import { BlogBaseInfo } from '../models/blog/blogBaseInfo';
+import { CacheService } from '../../cache.service';
+import { BlogBaseInfo } from '../../models/blog/blogBaseInfo';
 import { ActivatedRoute } from '@angular/router';
-import { BlogPost } from '../models/blog/blogPost';
+import { BlogPost } from '../../models/blog/blogPost';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  selector: 'app-page',
+  templateUrl: './page.component.html',
+  styleUrls: ['./page.component.scss']
 })
-export class BlogComponent implements OnInit {
+export class PageComponent implements OnInit {
 
   public pageNumber: number;
   public blogPosts: Array<BlogPost> = new Array<BlogPost>();
@@ -21,11 +21,13 @@ export class BlogComponent implements OnInit {
 
   constructor(private cacheService: CacheService, private route: ActivatedRoute) {
     this.route.paramMap.subscribe(params => {
+
       // tslint:disable-next-line:no-string-literal
       let page = this.route.snapshot.params['page'] as number;
       if (page == null) {
         page = 1;
       }
+
       this.pageNumber = page;
 
       console.log('page: ' + page);

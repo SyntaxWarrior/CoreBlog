@@ -35,7 +35,7 @@
     padding: 0px 6px 0px 6px;
 }
 
-.tag a:link {
+.tag a:link, .tag a:visited {
     color:#717171;
 }
 
@@ -43,7 +43,7 @@
     color: #000;
 }
 
-.tag a:focus, a:hover {
+.tag a:focus, .tag a:hover  {
     color: #23527c;
     text-decoration: underline;
 }
@@ -74,4 +74,7 @@
     padding-right:10px;
 }
 
-// .placeholder-oneline { }
+.box.Up a:link, .box.Up a:visited {
+    color:#fff;
+    text-decoration: none;
+}

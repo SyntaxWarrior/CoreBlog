@@ -4,16 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { BlogComponent } from './blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './blog/post/post.component';
+import { PageComponent } from './blog/page/page.component';
+import { SingleComponent } from './blog/single/single.component';
+import { CommentComponent } from './blog/comment/comment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    BlogComponent,
-    PostComponent
+    PostComponent,
+    PageComponent,
+    SingleComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
