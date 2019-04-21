@@ -1,0 +1,77 @@
+.authorBubble {
+    width:40px;
+    height:40px;
+    float:left;
+  }
+.commentBubble {
+    border-radius: 5px;
+    background: #333;
+    padding: 4px;
+    padding-left:8px;
+    padding-right:9px;
+    margin-left:5px;
+    color:white;
+    min-width: 40px;
+    height:40px;
+    float:left;
+    font-size: 20px;
+    text-align: center;
+  }
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent; 
+    border-bottom: 7px solid transparent; 
+    border-left: 10px solid #333; 
+    margin-top: 13px; float: left;
+}
+
+.tag{
+    float:left;
+    color:#717171;
+    background-color:#dedede; 
+    margin-right:3px;
+    padding: 0px 6px 0px 6px;
+}
+
+.tag a:link {
+    color:#717171;
+}
+
+.tag a:hover {
+    color: #000;
+}
+
+.tag a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.box {
+    color: #fff;
+    background-color: #333;
+    float:right;
+    width:40px;
+    height:40px;
+    font-size: 13px;
+    padding-left:8px;
+    margin-left:4px;
+}
+
+.box.Up {
+    background-color: #28a745;
+}
+.box.Down {
+    background-color: #007bff;
+}
+.box.Count {
+    background-color: #333;
+    font-size:20px;
+    min-width:40px !important;
+    width:auto !important;
+    padding-top:4px;
+    padding-right:10px;
+}
+
+// .placeholder-oneline { }
