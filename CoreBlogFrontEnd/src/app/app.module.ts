@@ -9,6 +9,7 @@ import { PostComponent } from './blog/post/post.component';
 import { PageComponent } from './blog/page/page.component';
 import { SingleComponent } from './blog/single/single.component';
 import { CommentComponent } from './blog/comment/comment.component';
+import { DisqusModule } from 'ngx-disqus';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CommentComponent } from './blog/comment/comment.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    DisqusModule.forRoot('syntaxwarriors-com')
   ],
   providers: [],
   bootstrap: [AppComponent]

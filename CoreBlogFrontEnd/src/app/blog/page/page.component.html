@@ -3,7 +3,7 @@
     <div *ngIf="last === false" class="mt-5"></div>
   </div>
   
-  <div class="row" *ngIf="postIdsToLoad.length == 0">
+  <div class="row" *ngIf="postIdsToLoad.length == 0 && loaded">
     <div class="col-md-12 text-center mt-5">
       You have reached the end.
     </div>

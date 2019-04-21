@@ -3,9 +3,11 @@ export class BlogPost {
     publishDate: Date;
     editDate: Date;
     title: string;
+    url: string;
     subTitle: string;
     author: string;
     tags: string[];
+    score: number;
     except: string;
     content: string;
     constructor(values: any = {}) {

@@ -30,7 +30,6 @@ export class PageComponent implements OnInit {
 
       this.pageNumber = page;
 
-      console.log('page: ' + page);
       cacheService
         .getBlogAllPostIds()
         .subscribe(postIds => this.loadPage(cacheService, postIds, page)
