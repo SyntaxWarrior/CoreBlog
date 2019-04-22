@@ -10,6 +10,7 @@ import { PageComponent } from './blog/page/page.component';
 import { SingleComponent } from './blog/single/single.component';
 import { CommentComponent } from './blog/comment/comment.component';
 import { DisqusModule } from 'ngx-disqus';
+import { FrontComponent } from './blog/front/front.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DisqusModule } from 'ngx-disqus';
     PostComponent,
     PageComponent,
     SingleComponent,
-    CommentComponent
+    CommentComponent,
+    FrontComponent
   ],
   imports: [
     BrowserModule,

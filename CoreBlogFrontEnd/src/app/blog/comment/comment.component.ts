@@ -7,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CommentComponent implements OnInit {
 
-  @Input()
-  public pageId: string;
+  @Input() public pageId: string;
 
   constructor() { }
 

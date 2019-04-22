@@ -1,23 +1,23 @@
 <div *ngFor="let postId of postIdsToLoad; let last = last">
     <app-blog-post [PostId]="postId"></app-blog-post>
     <div *ngIf="last === false" class="mt-5"></div>
+</div>
+
+<div class="row" *ngIf="postIdsToLoad.length == 0 && loaded">
+  <div class="col-md-12 text-center mt-5">
+    You have reached the end.
   </div>
-  
-  <div class="row" *ngIf="postIdsToLoad.length == 0 && loaded">
-    <div class="col-md-12 text-center mt-5">
-      You have reached the end.
+</div>
+
+<div class="row mt-5" *ngIf="loaded">
+    <div class="col-md-12">
+      <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li><a class="page-link" [routerLink]="['']">1</a></li>
+            <li *ngFor="let item of (arrayOne(maxPages)); let i = index;" class="page-item">
+              <a class="page-link" [routerLink]="['', (i+2)]">{{i+2}}</a>
+            </li>
+        </ul>
+      </nav>
     </div>
-  </div>
-  
-  <div class="row mt-5" *ngIf="loaded">
-      <div class="col-md-12">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-              <li><a class="page-link" [routerLink]="['']">1</a></li>
-              <li *ngFor="let item of (arrayOne(maxPages)); let i = index;" class="page-item">
-                <a class="page-link" [routerLink]="['', (i+2)]">{{i+2}}</a>
-              </li>
-          </ul>
-        </nav>
-      </div>
-  </div>
+</div>

@@ -40,7 +40,7 @@
             <div class="arrow"></div>
             <div class="float-right">
                 <div class="box Count" href="#">
-                        {{blogPost.score}}
+                    <span *ngIf="blogPost.score >= 0">+</span>{{blogPost.score}}
                 </div>
                 <a class="box Down" href="#">
                     <i class="fas fa-caret-down fa-3x"></i>
@@ -51,7 +51,4 @@
             </div>
         </div>
     </div>
-</div>
-<div *ngIf="showComments">
-    boo
 </div>
