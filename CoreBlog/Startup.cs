@@ -63,6 +63,9 @@ namespace CoreBlog
                 app.UseHsts();
             }
 
+            app.UseDefaultFiles();
+            app.UseFileServer();
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
