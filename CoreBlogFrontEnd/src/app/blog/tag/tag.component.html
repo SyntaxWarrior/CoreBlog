@@ -1,0 +1,17 @@
+
+<div class="row mb-4">
+  <div class="col-md-12">
+      <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Posts with tag: '{{tagName}}'.</h5>
+            <p class="card-text">There 
+              <span *ngIf="postIds.length == 1">is {{postIds.length}} post with the tag '{{tagName}}'.</span>
+              <span *ngIf="postIds.length != 1">are {{postIds.length}} posts with the tag '{{tagName}}'.</span>
+              Only posts with this tag are shown.
+            </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<app-blog-page *ngIf="showPosts" [postIds]="postIds" [postsPerPage]="postsPerPage" [page]="pageNumber"></app-blog-page>

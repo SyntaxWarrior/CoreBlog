@@ -1,6 +1,5 @@
-export class BlogBaseInfo {
+export class BlogSettings {
     postsPerPage: number;
-    posts: number[];
     constructor(values: any = {}) {
       Object.assign(this, values);
     }

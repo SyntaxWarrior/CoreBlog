@@ -11,6 +11,7 @@ import { SingleComponent } from './blog/single/single.component';
 import { CommentComponent } from './blog/comment/comment.component';
 import { DisqusModule } from 'ngx-disqus';
 import { FrontComponent } from './blog/front/front.component';
+import { TagComponent } from './blog/tag/tag.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FrontComponent } from './blog/front/front.component';
     PageComponent,
     SingleComponent,
     CommentComponent,
-    FrontComponent
+    FrontComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,

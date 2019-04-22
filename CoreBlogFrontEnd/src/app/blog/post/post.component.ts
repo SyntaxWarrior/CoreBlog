@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CacheService } from 'src/app/cache.service';
-import { BlogPost } from 'src/app/models/blog/blogPost';
+import { BlogPost } from 'src/app/models/blog/BlogPost';
 
 @Component({
   selector: 'app-blog-post',

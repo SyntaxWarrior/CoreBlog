@@ -1,8 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CacheService } from '../../cache.service';
-import { BlogBaseInfo } from '../../models/blog/blogBaseInfo';
-import { ActivatedRoute } from '@angular/router';
-import { BlogPost } from '../../models/blog/blogPost';
+import { BlogPost } from '../../models/blog/BlogPost';
 
 @Component({
   selector: 'app-blog-page',
@@ -26,6 +24,9 @@ export class PageComponent implements OnInit {
   constructor() {}
 
   private loadPage(postsPerPage: number, postIds: number[], page: number) {
+
+    console.log('page listing: postsPerPage: ' + postsPerPage + ', postIds: ' + postIds + ', page: ' + page);
+
     this.postIdsToLoad = [];
     const pageIndex = (page - 1) * postsPerPage;
     this.maxPages = Math.ceil(postIds.length / postsPerPage);

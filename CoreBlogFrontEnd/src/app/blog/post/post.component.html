@@ -22,7 +22,7 @@
     <div class="row mt-3">
         <div class="col-sm-12">
             <div *ngFor="let tag of blogPost.tags">
-                <a class="tag" href="/tag/{{tag}}">{{tag}}</a>
+                <a class="tag" [routerLink]="['/tag', tag]">{{tag}}</a>
             </div>
             <div class="float-md-right float-right text-muted">
                 {{blogPost.publishDate}}
