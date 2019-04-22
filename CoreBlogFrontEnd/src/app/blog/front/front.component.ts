@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './front.component.html',
   styleUrls: ['./front.component.scss']
 })
- 
+
 export class FrontComponent implements OnInit {
 
   public pageNumber: number;
